@@ -1,0 +1,4 @@
+git status = Para ver el estado
+git add <carpeta/n> = Se agrega la carpeta completa
+git commit -m "<mensaje que se verá>" = Repositorio local 
+git push = Agregar al repositorio remoto
