@@ -2,6 +2,6 @@
 
 int main(){
 
-  printf ("\Wenas.\n");
+  printf ("\nWenas.\n");
 
 }
