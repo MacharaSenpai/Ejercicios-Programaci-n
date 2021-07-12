@@ -3,13 +3,16 @@
 
 int main(){
     
-    int size_f,size_c,f,c,M[10][10];
+    int size_f,size_c,size,f,c,M[10][10];
     char op='Y';
     
     while (op=='Y'){
     //--------------------------Carga matriz--------------------------------
     printf ("\nIngrese la cantidad de filas y columas de la matriz.\n");
     scanf ("%d%d",&size_f,&size_c);
+
+    size=size_f*size_c;
+    printf ("\nLa cantidad de valores que tendrá la matriz será de %d\n",size);
 
     printf ("\nIngrese los valores de la matriz.\n");
     for (f=1;f<=size_f;f++){

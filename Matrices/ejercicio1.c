@@ -3,7 +3,7 @@
 
 int main(){
     
-    int size_f,size_c,f,c,M[10][10],c1=0,c2=0;
+    int size_f,size_c,size,f,c,M[10][10],c1=0,c2=0;
     float s2=0,prom;
     char op='Y';
     
@@ -12,6 +12,9 @@ int main(){
     printf ("\nIngrese la cantidad de filas y columas de la matriz.\n");
     scanf ("%d%d",&size_f,&size_c);
 
+    size=size_f*size_c;
+    printf ("\nLa cantidad de valores que tendrá la matriz será de %d\n",size);
+
     printf ("\nIngrese los valores de la matriz.\n");
     for (f=1;f<=size_f;f++){
         for (c=1;c<=size_c;c++){
@@ -19,6 +22,7 @@ int main(){
             scanf ("%d",&M[f][c]);
         }
     }
+    
     //----------------------------Division entre respuestas.----------------------------------
     printf ("\n-------------------------------------------------------------------------------------------\n");
     //-----------------------------Procesos en la matriz---------------------------------
