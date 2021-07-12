@@ -12,12 +12,12 @@ int main(){
     scanf ("%d%d",&size_f,&size_c);
 
     size=size_f*size_c;
-    printf ("\nLa cantidad de valores que tendrá la matriz será de %d\n",size);
+    printf ("\nLa cantidad de valores que tendrá la matriz será de %d.\n",size);
 
     printf ("\nIngrese los valores de la matriz.\n");
     for (f=1;f<=size_f;f++){
         for (c=1;c<=size_c;c++){
-            printf ("M[%d,%d]",c,f);
+            printf ("M[%d,%d] = ",f,c);
             scanf ("%d",&M[f][c]);
         }
     }
