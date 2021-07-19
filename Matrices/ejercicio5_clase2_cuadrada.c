@@ -3,7 +3,8 @@
 
 int main(){
     
-    int size_f,size_c,size,f,c,M[10][10],c1=0;
+    int size_f,size_c,size,f,c,i,M[10][10],c1=0;
+    int V1[10],V1_1[10],V1_2[10];
     char op='Y';
     
     while (op=='Y'){
@@ -29,12 +30,19 @@ int main(){
         for (c=1;c<=size_c;c++){
             if (M[f][c]%2==0 && M[f][c]>0 && f==c){
                 c1=c1+1;
+                V1[c1]=M[f][c]; //Matriz resultante.
+                V1_1[c1]=f; //Filas.
+                V1_2[c1]=c; //Columnas.
             }
         }
     }
 
-    printf ("\nEn la matriz hay %d valores pares positivos en su diagonal principal.\n",c1);}
-
+    printf ("\nEn la matriz hay %d valores pares positivos en su diagonal principal. Estos son en estas posiciones:\n",c1);
+    for (i=1;i<=c1;i++){
+        printf ("\n%d --> [%d,%d]\n",V1[i],V1_1[i],V1_2[i]);
+    }
+    }
+    
     else{
         printf ("\nLa matriz no es cuadrada.\n");
     } 
