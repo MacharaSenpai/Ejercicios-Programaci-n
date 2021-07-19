@@ -3,7 +3,7 @@
 
 int main(){
     
-    int size_f,size_c,size,f,c,M[10][10],c1=0,c2=0;
+    int size_f,size_c,size,f,c,M[10][10],My,Pmy,Pmy2;
     char op='Y';
     
     while (op=='Y'){
@@ -21,29 +21,23 @@ int main(){
             scanf ("%d",&M[f][c]);
         }
     }
-    
+    My=M[1][1]; //Mayor
+    Pmy=1; //Posición en fila
+    Pmy2=1; //Posición en columna
     //----------------------------Division entre respuestas.----------------------------------
     printf ("\n-------------------------------------------------------------------------------------------\n");
     //-----------------------------Procesos en la matriz---------------------------------
     for (f=1;f<=size_f;f++){
         for (c=1;c<=size_c;c++){
-            if (M[f][c]>0){
-                c1=c1+1;
-            }
-            if (M[f][c]<0){
-                c2=c2+1;
-                
+            if (M[f][c]>My){
+                My=M[f][c];
+                Pmy=f;
+                Pmy2=c;
             }
         }
     }
-    
-    if (c1>c2){
-        printf ("\nEn la matriz hay más valores positivos que valores negativos. En total hay %d.\n",c1);
-    }
 
-    if (c2>c1){
-        printf ("\nEn la matriz hay más valores negativos que valores positivos. En total hay %d.\n",c2);
-    }
+    printf ("\nEl mayor de la matriz es %d en la fila %d y columna %d\n",My,Pmy,Pmy2);
     //-----------------------------Final---------------------------------
     printf ("\n¿Deseas continuar? [Y/n]\n");
     scanf ("%s",&op);
@@ -53,8 +47,6 @@ int main(){
     printf ("\n");
     }
 
-  c1=0;
-  c2=0;
-
- } //While
-} //Main
+  //Contadores y suamdores en 0.
+ }
+}
