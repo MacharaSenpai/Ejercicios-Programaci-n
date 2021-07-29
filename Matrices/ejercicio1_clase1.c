@@ -6,7 +6,7 @@ int main(){
     int size_f,size_c,size,f,c,M[10][10],c1=0,c2=0;
     float s2=0,prom;
     char op='Y';
-    
+
     while (op=='Y'){
     //--------------------------Carga matriz--------------------------------
     printf ("\nIngrese la cantidad de filas y columas de la matriz.\n");
@@ -18,7 +18,7 @@ int main(){
     printf ("\nIngrese los valores de la matriz.\n");
     for (f=1;f<=size_f;f++){
         for (c=1;c<=size_c;c++){
-            printf ("M[%d,%d]",f,c);
+            printf ("M[%d,%d] = ",f,c);
             scanf ("%d",&M[f][c]);
         }
     }
