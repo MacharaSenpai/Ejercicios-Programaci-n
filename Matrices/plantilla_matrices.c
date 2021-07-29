@@ -36,7 +36,7 @@ int main(){
     printf ("\n");
     }
 
-  //Contadores y suamdores en 0.
+  //Contadores y suamdores en 0
 
  } //While
 } //Main
