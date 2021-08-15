@@ -10,7 +10,7 @@ int main(){
     char op='Y';
     
     while (op=='Y'){
-    //--------------------------Carga matriz--------------------------------
+    //--------------------------Carga matriz-------------------------------
     printf ("\nIngrese la cantidad de filas y columas de la matriz.\n");
     scanf ("%d%d",&size_f,&size_c);
 
