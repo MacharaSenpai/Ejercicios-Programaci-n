@@ -9,7 +9,7 @@ int main(){
 
     while (op=='Y'){
     //--------------------------Carga matriz--------------------------------
-    printf ("\nIngrese la cantidad de filas y columas de la matriz.\n");
+    printf ("\nIngrese la antidad de filas y columas de la matriz.\n");
     scanf ("%d%d",&size_f,&size_c);
 
     size=size_f*size_c;
