@@ -47,7 +47,7 @@
         {
             "type": "cppbuild",
             "label": "C/C++: g++.exe compilar archivo activo",
-            "command": "C:\\msys64\\mingw64\\bin\\g++.exe",
+            "command": "C:\\w64devkit\\bin\\g++.exe",
             "args": [
                 "-g",
                 "${file}",
@@ -64,12 +64,12 @@
                 "kind": "build",
                 "isDefault": true
             },
-            "detail": "compilador: C:\\msys64\\mingw64\\bin\\g++.exe"
+            "detail": "compilador: C:\\w64devkit\\bin\\g++.exe"
         },
         {
             "type": "cppbuild",
             "label": "C/C++: gcc.exe compilar archivo activo",
-            "command": "C:\\msys64\\mingw64\\bin\\gcc.exe",
+            "command": "C:\\w64devkit\\bin\\gcc.exe",
             "args": [
                 "-g",
                 "${file}",
@@ -83,7 +83,7 @@
                 "$gcc"
             ],
             "group": "build",
-            "detail": "compilador: C:\\msys64\\mingw64\\bin\\gcc.exe"
+            "detail": "compilador: C:\\w64devkit\\bin\\gcc.exe"
         }
     ]
 }
