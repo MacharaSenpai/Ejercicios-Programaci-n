@@ -5,7 +5,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "g++ - Compilar y depurar el archivo activo",
+            "name": "C++ Linux",
             "type": "cppdbg",
             "request": "launch",
             "program": "${fileDirname}/${fileBasenameNoExtension}",
@@ -22,11 +22,11 @@
                     "ignoreFailures": true
                 }
             ],
-            "preLaunchTask": "C/C++: g++ compilar archivo activo",
+            "preLaunchTask": "C++ Linux",
             "miDebuggerPath": "/usr/bin/gdb"
         },
         {
-            "name": "gcc - Compilar y depurar el archivo activo",
+            "name": "C Linux",
             "type": "cppdbg",
             "request": "launch",
             "program": "${fileDirname}/${fileBasenameNoExtension}",
@@ -43,7 +43,7 @@
                     "ignoreFailures": true
                 }
             ],
-            "preLaunchTask": "C/C++: gcc compilar archivo activo",
+            "preLaunchTask": "C Linux",
             "miDebuggerPath": "/usr/bin/gdb"
         }
     ]

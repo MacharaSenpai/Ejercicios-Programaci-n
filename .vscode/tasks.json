@@ -3,7 +3,7 @@
     "tasks": [
         {
             "type": "cppbuild",
-            "label": "C/C++: g++ compilar archivo activo",
+            "label": "C++ Linux",
             "command": "/usr/bin/g++",
             "args": [
                 "-g",
@@ -23,7 +23,7 @@
         },
         {
             "type": "cppbuild",
-            "label": "C/C++: gcc compilar archivo activo",
+            "label": "C Linux",
             "command": "/usr/bin/gcc",
             "args": [
                 "-g",
@@ -46,7 +46,7 @@
         },
         {
             "type": "cppbuild",
-            "label": "C/C++: g++.exe compilar archivo activo",
+            "label": "C++ Windows",
             "command": "C:\\w64devkit\\bin\\g++.exe",
             "args": [
                 "-g",
@@ -68,7 +68,7 @@
         },
         {
             "type": "cppbuild",
-            "label": "C/C++: gcc.exe compilar archivo activo",
+            "label": "C Windows",
             "command": "C:\\w64devkit\\bin\\gcc.exe",
             "args": [
                 "-g",
